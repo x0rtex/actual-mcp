@@ -73,6 +73,10 @@ The Actual Budget MCP Server allows you to interact with your personal financial
 - **`update-rule`** - Update an existing transaction rule
 - **`delete-rule`** - Delete a transaction rule
 
+#### Schedules
+
+- **`get-schedules`** - Retrieve a list of all recurring schedules with their account, payee, amount and next date
+
 ### Prompts
 
 - **`financial-insights`** - Generate insights and recommendations based on your financial data

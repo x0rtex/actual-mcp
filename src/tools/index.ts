@@ -42,6 +42,7 @@ import * as createRule from './rules/create-rule/index.js';
 import * as deleteRule from './rules/delete-rule/index.js';
 import * as getRules from './rules/get-rules/index.js';
 import * as updateRule from './rules/update-rule/index.js';
+import * as getSchedules from './schedules/get-schedules/index.js';
 import * as spendingByCategory from './spending-by-category/index.js';
 import * as deleteTransaction from './delete-transaction/index.js';
 import * as updateTransaction from './update-transaction/index.js';
@@ -69,6 +70,7 @@ const readTools = [
   getGroupedCategories,
   getPayees,
   getRules,
+  getSchedules,
   getCustomReports,
   getDashboards,
   getBudgetMonths,

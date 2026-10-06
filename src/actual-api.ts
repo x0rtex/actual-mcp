@@ -1,5 +1,11 @@
 import * as api from '@actual-app/api';
-import { APIAccountEntity, APICategoryEntity, APICategoryGroupEntity, APIPayeeEntity } from '@actual-app/api/models';
+import {
+  APIAccountEntity,
+  APICategoryEntity,
+  APICategoryGroupEntity,
+  APIPayeeEntity,
+  APIScheduleEntity,
+} from '@actual-app/api/models';
 import {
   CustomReportEntity,
   DashboardPageEntity,
@@ -91,6 +97,13 @@ export function getAccountBalance(accountId: string, cutoff?: Date): Promise<num
  */
 export function getRules(): Promise<RuleEntity[]> {
   return getActualConnection().run(() => api.getRules());
+}
+
+/**
+ * Returns every schedule in the loaded budget.
+ */
+export function getSchedules(): Promise<APIScheduleEntity[]> {
+  return getActualConnection().run(() => api.getSchedules());
 }
 
 /**
